@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Profile card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    /* Overall page styling */
+body {
+  background-color: hsl(185, 75%, 39%);
+  font-family: 'Kumbh Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Card container */
+.card {
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: center;
+  width: 350px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Top background image (you can use background-image or img tag) */
+.card-header {
+  background: url('images/bg-pattern-top.svg') no-repeat center/cover;
+  height: 140px;
+}
+
+/* Profile image */
+.profile-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px solid white;
+  margin-top: -50px;
+}
+
+/* Name and location */
+.card-body {
+  padding: 20px;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.age {
+  color: hsl(227, 10%, 46%);
+  margin-left: 8px;
+}
+
+.location {
+  font-size: 14px;
+  color: hsl(227, 10%, 46%);
+  margin-top: 5px;
+}
+
+/* Divider */
+hr {
+  border: none;
+  height: 1px;
+  background-color: hsl(227, 10%, 85%);
+  margin: 20px 0;
+}
+
+/* Stats section */
+.stats {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 20px 20px;
+}
+
+.stat {
+  font-size: 14px;
+}
+
+.stat .number {
+  font-weight: 700;
+  display: block;
+}
+
+.stat .label {
+  color: hsl(227, 10%, 46%);
+  font-size: 12px;
+  margin-top: 4px;
+}
+    .attribution { font-size: 14px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution{
+      position: absolute;
+      bottom: 120px;
+
+    }
+  </style>
+</head>
+<body>
+  <section>
+  <div class="card">
+    <div class="card-header"></div>
+    <img src="images/image-victor.jpg" alt="Victor Crest" class="profile-img" />
+    <div class="card-body">
+      <div class="name">Victor Crest <span class="age">26</span></div>
+      <div class="location">London</div>
+      <hr />
+      <div class="stats">
+        <div class="stat">
+          <span class="number">80K</span>
+          <span class="label">Followers</span>
+        </div>
+        <div class="stat">
+          <span class="number">1M</span>
+          <span class="label">Likes</span>
+        </div>
+        <div class="stat">
+          <span class="number">1.4K</span>
+          <span class="label">Photos</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Kriti Upadhyay</a>.
+  </div>
+</body>
+</html>
